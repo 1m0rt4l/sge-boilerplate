@@ -53,7 +53,7 @@ return [
     */
 
     'url' => env('APP_URL', 'http://localhost'),
-
+    'url_base' => env('APP_URL_BASE', '*.test'),
     /*
     |--------------------------------------------------------------------------
     | Application Timezone
@@ -160,6 +160,10 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
 
+        /*
+        * Google Drive Service Provider
+        */
+        App\Providers\GoogleDriveServiceProvider::class,        
     ],
 
     /*

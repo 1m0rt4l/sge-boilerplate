@@ -43,6 +43,15 @@ return [
 
     'disks' => [
 
+        'google' => [
+            'driver' => 'google',
+            'clientId' => env('GOOGLE_DRIVE_CLIENT_ID', null),
+            'clientSecret' => env('GOOGLE_DRIVE_CLIENT_SECRET', null),
+            'refreshToken' => env('GOOGLE_DRIVE_REFRESH_TOKEN', null),
+            'folderId' => env('GOOGLE_DRIVE_FOLDER_ID', null),
+            // 'teamDriveId' => env('GOOGLE_DRIVE_TEAM_DRIVE_ID'),
+        ],
+
         'local' => [
             'driver' => 'local',
             'root' => storage_path('app'),
