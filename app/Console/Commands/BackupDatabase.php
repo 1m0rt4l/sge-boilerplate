@@ -70,7 +70,7 @@ class BackupDatabase extends Command
         $connection->set($website);
         $hostName = Hostname::query()->where('website_id', $website->id)->firstOrFail()->fqdn;
         //$email = User::where('id', 1)->firstOrFail()->email;
-        $email = User::role('Administrador')->firstOrFail()->email();
+        $email = User::role('Administrador')->firstOrFail()->email;
         \Config::set('backup.notifications.mail.to', $email);
         \Config::set('backup.backup.source.databases', ['tenant']);
         //\Config::set('backup.backup.name', 'tenant-' . $hostName);
