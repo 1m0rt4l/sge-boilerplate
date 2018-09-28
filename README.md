@@ -29,3 +29,12 @@ $this->sendNotification(new BackupWasSuccessful($backupDestination));
 ```
 and make & send yourself a notification. Or edit the vendor code at your liking.
 
+## Getting started
+Please follow these steps:
+```
+Copy the .env.example and fill it up.
+Composer update
+php artisan migrate
+php artisan tenant:create [prefix] [name] [email] [password]
+php artisan tenant:backup --id=all
+```
