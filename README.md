@@ -11,6 +11,7 @@ In words other than my mother tongue. This is a boilerplate for an Enterprise Ma
 - [spatie/laravel-backup](https://github.com/spatie/laravel-backup)
 - [spatie/laravel-permission](https://github.com/spatie/laravel-permission)
 - [nao-pon/flysystem-google-drive](https://github.com/nao-pon/flysystem-google-drive)
+- [barryvdh/laravel-debugbar](https://github.com/barryvdh/laravel-debugbar)
 - [doctrine/dbal](https://laravel.com/docs/5.7/migrations#modifying-columns)
 
 This is the core for a multi tenant solution with activity log and permissions.
